@@ -1,0 +1,215 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+        <!-- How to use the sensor -->
+         <section class = "procedure">
+            <div class="container">
+                <br>
+
+                <div class="text-center">
+                    <h1>Procedure</h1>
+                    <h2>A brief breakdown of the experiment's methodology</h2>
+                </div>
+                
+                <hr><br>
+
+                <table class = "table text-center table-lightf table-bordered border-dark-subtle">
+                    <thead>
+                        <tr class = "table-primary">
+                            <th><h3>Step</h3></th>
+                            <th><h3>Description</h3></th>
+                            <th><h3>Image</h3></th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-group-divider">
+                        <tr class="align-middle">
+                            <!-- scope = row specifies header cell is the header for that row -->
+                            <th scope = "row" class = "table-secondary">
+                                <h3>1</h3>
+                            </th>
+                            <td>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <h3 class = "howTo"> &emsp; &emsp; &emsp;&emsp; Pre-trial Preparation & Conditioning</h3>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <ul>
+                                                <li>
+                                                    The tennis balls first need to be prepared for their respective conditions.
+                                                </li>
+                                                <li>
+                                                    The new balls are kept in their cans and depressurising containers are used to replicate the dead balls for the experiment. 
+                                                </li>
+                                                <li>
+                                                    A ball dropping test was conducted in order to ensure consistent ball pressures for both conditions.
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </td>
+                            <td class = "text-center"> <img class = "img-fluid" src="{{url_for('static', filename='/img/pre-trial.png')}}" alt = "Pre-Trial"></td>
+                        </tr>
+
+                        <tr class="align-middle">
+                            <!-- scope = row specifies header cell is the header for that row -->
+                            <th scope = "row" class = "table-secondary">
+                                <h3>2</h3>
+                            </th>
+                            <td>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                <h3 class = "howTo"> &emsp; &emsp; &emsp;&emsp;&emsp;Experimental Setup</h3>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li>
+                                                        The tennis racquet was bound to a steel pull up bar to ensure that the racquet head did not move upon impact.
+                                                    </li>
+                                                    <li>
+                                                        The camera was set up perpendicular to the collision for the best view.
+                                                    </li>
+                                                    <li>
+                                                        The ball machine was set up roughly 20 feet away from the racquet head. 
+                                                    </li>
+                                                </ul>
+                                          </div>
+                                        </div>
+                                </div>
+                            </td>
+                            <td class = "text-center"> <img class = "img-fluid" src="{{url_for('static', filename='/img/setup.png')}}" alt = "Experimental Setup"></td>
+                        </tr>
+                        <tr class="align-middle">
+                            <!-- scope = row specifies header cell is the header for that row -->
+                            <th scope = "row" class = "table-secondary">
+                                <h3>3</h3>
+                            </th>
+                            <td>
+                                <div class="accordion" id="accordionExample"></div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                <h3 class = "howTo">  &emsp; &emsp;&emsp;&emsp;&emsp;Data Collection</h3>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li>
+                                                        30 videos were taken for all four conditions:
+                                                    </li>
+                                                    <li>
+                                                        The 4 conditions: 
+                                                    </li>
+                                                  </ul>
+                                                  <ol>
+                                                    <li>
+                                                        Vibration dampener with new balls, 
+                                                    </li>
+                                                    <li>
+                                                        Vibration dampener with old balls, 
+                                                    </li>
+                                                    <li>
+                                                        No vibration dampener with new balls,
+                                                    </li>
+                                                    <li>
+                                                        No vibration dampener with old balls
+                                                    </li>
+                                                  </ol>
+                                            </div>
+                                          </div>
+                                        </div>
+                                </div> 
+                            </td>
+                            <td class = "text-center"> <img class = "img-fluid" src="{{url_for('static', filename='/img/data-collection.png')}}" alt = "Raw Data"></td>
+                        </tr>
+                        <tr class="align-middle">
+                            <!-- scope = row specifies header cell is the header for that row -->
+                            <th scope = "row" class = "table-secondary">
+                                <h3>4</h3>
+                            </th>
+                            <td>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                <h3 class = "howTo">  &emsp; &emsp;&emsp;&emsp;&emsp;Video Analysis</h3>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li>
+                                                        The videos clips were then trimmed, cropped, and ran through the program.
+                                                    </li>
+                                                    <li>
+                                                        The OpenCV Ball Tracking Program utilized the green contrast of the tennis ball compared to the background in order to track the ball's velocity before and after the collision.
+                                                    </li>
+                                                    <li>
+                                                        The initial and final velocities were used to calculate the coefficient of restitution (COR) in order to compare the experimental conditions. 
+                                                    </li>
+                                                </ul>                                            
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </div>
+                                </div>
+                            </td>
+                            <td class = "text-center"> <img class = "img-fluid" src="{{url_for('static', filename='/img/video-analysis.png')}}" alt = "Video Analysis"></td>
+                        </tr>
+                        <tr class="align-middle">
+                            <!-- scope = row specifies header cell is the header for that row -->
+                            <th scope = "row" class = "table-secondary">
+                                <h3>5</h3>
+                            </th>
+                            <td>
+                                <div class="accordion" id="accordionExample"></div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                <h3 class = "howTo"> &emsp; &emsp;&emsp;&emsp;Force-Mechanics Model</h3>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li>
+                                                        A previous study provided a mechanics model of the tennis racquet (treated as a rigid beam) to calculate the force on the hand as a function of the force of the ball (Derived from rotational dynamics).
+                                                    </li>
+                                                    <li>
+                                                        Combined with the impulse equation (Derived from the change in momentum), the force on the hand was calculated as a function of the tennis ball.
+                                                    </li>
+                                                    <li>
+                                                        Parameters such as the dimentions of the racquet, center of mass, COR and impact time were measures or found online to be as precise as possible.
+                                                    </li>
+                                                </ul>                                            </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </td>
+                            <td class = "text-center"> <img class = "img-fluid" src="{{url_for('static', filename='/img/force-model.png')}}" alt = "Force-mechanics Model"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+            </div>
+         </section>
+
+{% endblock content %}

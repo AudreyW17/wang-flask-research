@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+        <!-- About the Team -->
+        <section class="authors">
+            <div class="container">
+                <br>
+                <h1 class="text-center about-team">About the Author</h1>
+                <hr><br>
+        
+                <div class="row align-items-center">
+                    <div class="col-4 text-center">
+                        <img src="{{url_for('static', filename='/img/profile1.png')}}" class="profile-img img-fluid" alt="Name1">
+                    </div>
+                    <div class="col-8">
+                        <div class="container-author">
+                            <div class="container">
+                                <h4 class="author-heading">Audrey Wang</h4>
+                                <br>
+                                <h5 class = "author-class">Class: Software Engineering, Research Practicum</h5>
+                                <br>
+                                <p class = "author">Audrey Wang is a junior at High Technology High School. She is the main researcher and contributer to this project, with the help of her teacher, Mr. Craig Queenan.</p>
+
+                                <p class = "author">In school, Audrey enjoys learning different coding languages and calculus, her two favorite classes. In her free time, she also enjoys playing tennis for her home high school Holmdel, crocheting, and playing video games. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </section>
+
+{% endblock content %}

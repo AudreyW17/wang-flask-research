@@ -1,0 +1,311 @@
+/* ----------------- Class CSS ----------------- */
+
+.about{
+    width:400px;
+    margin: auto;
+    
+}
+
+.about-team{
+    color:rgb(82, 81, 81)
+}
+
+.authors{
+    background-color: #d0e3c9;
+}
+
+.body{
+    background-color: #9ebd93;
+}
+
+.footer{
+    background-color: #81a772;
+}
+
+.icon-white{            /* Arrow icon at bottom of page */
+    color: #FFFFFF;
+}
+
+.nb-background-color{   /* navbar background color */
+    background-color: #81a772;
+}
+
+.nbMenuItem{               /* navbar link text properties */
+    font-size:25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-item{
+    color:#d0e3c9;
+    font-family:Ubuntu;
+}
+
+.overview{
+    background-color: #d0e3c9;
+    font-family: Ubuntu;
+    border-radius:40px;
+    margin:20px auto;
+}
+
+.ovPadLeft{
+    padding-left: 20px;
+}
+
+.ovPadRight{  
+    padding-right: 20px;
+}
+
+.procedure{
+    background-color: #d0e3c9;
+    padding: 1px;
+}
+
+.showcase{
+    background-color: #b7d1af; /*#0096c7*/
+    border-radius:40px;
+    margin:20px auto;
+}
+
+.table-primary th{
+    background-color: #b7d1af;
+    font-family:Ubuntu;
+    font-weight:500;
+}
+
+tbody th.table-secondary {
+    background-color:#c9d9c3;
+    font-family:Ubuntu;
+    font-weight:400;
+}
+
+tbody td:nth-child(2) {
+    background-color: #ebf3e9;
+    font-family:Ubuntu;
+    font-weight:400;
+}
+
+tbody td:nth-child(3) {
+    background-color: #ebf3e9;
+    font-family:Ubuntu;
+    font-weight:400;
+}
+
+.display-4{
+    font-family:Ubuntu;
+    font-weight:500;
+    color: #607c55;
+}
+
+.container h3{
+    font-family: Ubuntu;
+    font-weight:500;
+    color:#000000;
+}
+
+.container h1{
+    font-family: Ubuntu;
+    font-weight:600;
+    color:#607c55;
+}
+
+.card-body {
+    font-family: Ubuntu;
+}
+
+.card-body h4{
+    color:#537d43;
+    font-weight: 500;
+}
+
+
+.border-row{
+    background: #b7d1af;
+    border-radius: 20px;
+    margin: 20px;
+
+}
+
+.card{
+    border-radius: 30px;
+}
+
+.card img{
+    border-radius:30px;
+}
+
+.text-center{
+    font-family: Ubuntu;
+}
+
+.howTo {
+    text-align: center; 
+    margin: 0 auto; 
+    font-family: Ubuntu;
+}
+.accordion-button {
+    background-color: #dae8d7; 
+    color: #000; 
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #dae8d7; 
+    box-shadow: 0 0 0 0.25rem #86ab6f80; 
+    color: #537d43;
+}
+
+.accordion-button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 0.25rem #86ab6f80; 
+    border: none; 
+    color:#537d43;
+}
+
+.navbar{
+    border-radius:40px;
+    margin:20px auto;
+}
+
+.footer{
+    border-radius:40px;
+    margin:20px auto;
+}
+
+.procedure{
+    border-radius:40px;
+    margin:20px auto;
+}
+
+.authors{
+    border-radius:40px;
+    margin:20px auto;
+}
+
+.table{
+    margin:auto;
+}
+
+.text-center img {
+    border-radius:30px;
+}
+
+.overview-image{
+    margin:20px;
+    border:10px #607c55 solid;
+}
+
+.profile-img{
+    margin-left: 20px;
+    border: 10px solid #607c55;
+}
+
+.author-heading{
+    font-size: xx-large;
+    font-weight:900;
+    font-family: Ubuntu;
+    color:#537d43
+}
+
+.container-author{
+    background-color:#b7d1af;
+    border-radius: 40px;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.index-text{
+    font-size: large;
+}
+
+.col-md-4 img{
+    margin:10px;
+}
+
+.index-img{
+    border: 10px solid #607c55;
+    border-radius:30px;
+
+}
+
+.accordion-body {
+    text-align: left; 
+
+}
+
+.accordion-body ul {
+    list-style-type: disc;
+    padding-left: 20px;  
+}
+
+.accordion-body li {
+    margin-bottom: 10px; 
+}
+
+/* ----------------- ID CSS ----------------- */
+
+/* -----------------Underline Animation CSS -----------------*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    /*color: #0087ca;*/
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #eae6e6;
+    /*transform-origin: bottom right;*/
+    transition: transform 0.35s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    /*transform-origin: bottom left;*/
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .nav-link.nbMenuItem:hover {
+    animation: bounce 1.5s;
+  }
+
+  .custom-link {
+    text-decoration: none;  /* Removes the underline */
+    color: inherit;        /* Inherits the color from the h1 */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #537d43;            /* Change to desired hover color */
+}
+
+#chart-wrapper{
+    margin: auto;
+    padding: 10px;
+    /* If nesting a chart's container within another container, remove the 
+       height and width values.  The outer container will control the dimensions */ 
+    height: 40vh; 
+    min-height: 400px;
+    background-color: whitesmoke !important;
+    justify-content: center;
+    align-items: center;  
+    
+}
+
